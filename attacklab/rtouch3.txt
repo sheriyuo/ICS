@@ -1,0 +1,8 @@
+48 89 e0    mov  %rsp, %rax         # 0x4019c4
+48 89 c7    mov  %rax, %rdi         # 0x40196f
+58          popq %rax               # 0x401962
+89 c2       mov  %eax, %edx         # 0x4019a1
+89 d1       mov  %edx, %ecx         # 0x4019e5
+89 ce       mov  %ecx, %esi         # 0x401a64
+48 8d 04 37 lea  (%rdi,%rsi,1),%rax # 0x40199b <add_xy>
+48 89 c7    mov  %rax, %rdi         # 0x40196f

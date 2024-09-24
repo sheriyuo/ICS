@@ -1,0 +1,5 @@
+                        dup2(fds[1], STDOUT_FILENO);
+                    dup2(wr_fd, STDOUT_FILENO);
+                dup2(prev_fd, STDIN_FILENO);
+                dup2(wr_fd, STDOUT_FILENO);
+    dup2(1, 2);
